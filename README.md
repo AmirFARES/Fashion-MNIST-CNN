@@ -21,10 +21,7 @@ Additionally, for an in-depth look at the project and its development, you can a
 
 ## Methodology 🚀
 
-Explain how you tackled the project and the steps you took. Answer questions like:
-- How did you approach building and training the CNN model?
-- Did you encounter any specific challenges or obstacles?
-- What was your overall methodology for image classification?
+Our approach to building and training the CNN model involved initially starting with a simple architecture and progressively refining it. We encountered challenges such as overfitting and the time-consuming training process due to the resource limitations of free cloud services. To address overfitting, we incorporated multiple dropout layers, which proved to be effective. The overall methodology for image classification comprised several key steps, including data preprocessing tasks like data splitting, label and distribution checks, handling missing values, normalization, reshaping, and label encoding. We then proceeded to design, train, and fine-tune the model, making it more robust and capable of tackling the complexities of fashion item classification. Visualization of results played an integral role in understanding the model's performance and identifying areas for improvement.
 
 ## Data Preprocessing 🛠️
 
@@ -38,14 +35,41 @@ Our data preprocessing ensured that our dataset was well-structured and ready fo
 
 ## Model Architecture 🏗️
 
-Our CNN model's architecture was designed to effectively classify fashion items. Here are the key components of our model:
+Our CNN model's architecture was designed to effectively classify fashion items. The model's layers are as follows:
 
-- **Convolutional Layers**
-- **Pooling Layers**
-- **Dropout Layers**
-- **Flatten and Dense Layers**
+```plaintext
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 26, 26, 32)        320       
+                                                                 
+ max_pooling2d (MaxPooling2D) (None, 13, 13, 32)       0         
+ )                                                               
+                                                                 
+ dropout (Dropout)           (None, 13, 13, 32)        0         
+                                                                 
+ conv2d_1 (Conv2D)           (None, 11, 11, 64)        18496     
+                                                                 
+ max_pooling2d_1 (MaxPooling2D) (None, 5, 5, 64)         0         
+ )                                                               
+                                                                 
+ dropout_1 (Dropout)         (None, 5, 5, 64)          0         
+                                                                 
+ flatten (Flatten)           (None, 1600)              0         
+                                                                 
+ dense (Dense)               (None, 64)                102464    
+                                                                 
+ dropout_2 (Dropout)         (None, 64)                0         
+                                                                 
+ dense_1 (Dense)             (None, 10)                650       
+                                                                 
+=================================================================
+Total params: 121,930
+Trainable params: 121,930
+Non-trainable params: 0
+_________________________________________________________________
 
-Our model's architecture was carefully chosen to balance model complexity and performance.
 
 ## Training and Evaluation 📈
 
