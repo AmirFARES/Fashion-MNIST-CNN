@@ -93,3 +93,23 @@ Our model's training and evaluation strategy aimed to find the right balance bet
 
 - Excited to share our findings with the community and continue improving our model.
 
+## Future Work 🚧
+
+- Further fine-tuning the model to enhance performance.
+- Exploring data augmentation techniques for increased diversity.
+- Focusing on addressing misclassified labels, especially for similar fashion categories observed in previous results.
+
+
+## Connect with Me 📫
+
+Feel free to reach out for any project-related inquiries, collaboration opportunities, or discussions. You can connect with me on [LinkedIn](https://www.linkedin.com/in/amir-f), explore more of my projects on [GitHub](https://github.com/AmirFARES), and check out my portfolio [here](https://amirfares.github.io/).
+
+## Acknowledgments 🙏
+
+I'd like to express my gratitude to the providers of the fashion MNIST dataset.
+
+Thank you for visiting my project repository, and I'm excited to share more data-driven insights in the future!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/amir-f)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-orange)](https://amirfares.github.io/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-green)](https://github.com/AmirFARES)
