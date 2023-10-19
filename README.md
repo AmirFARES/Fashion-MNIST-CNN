@@ -70,6 +70,7 @@ Trainable params: 121,930
 Non-trainable params: 0
 _________________________________________________________________
 
+```
 
 ## Training and Evaluation 📈
 
