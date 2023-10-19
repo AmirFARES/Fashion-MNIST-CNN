@@ -1,6 +1,6 @@
 # Fashion MNIST CNN Classifier
 
-![Project Image](link-to-your-image)
+![Project Image](https://github.com/AmirFARES/Fashion-MNIST-CNN/blob/main/imgs/fashionLogo.png)
 
 ## Introduction 🌟
 
@@ -74,21 +74,22 @@ _________________________________________________________________
 
 ## Training and Evaluation 📈
 
-Our model training process followed these key steps:
+- **Optimization:** We used the Adam optimizer with default parameters.
+- **Loss Function:** Categorical cross-entropy.
+- **Epochs and Early Stopping:** The model was trained for 35 epochs, and we implemented early stopping.
+- **Evaluation Metrics:** We assessed the model's performance using accuracy as the evaluation metric.
 
-- **Optimization**
-- **Loss Function**
-- **Epochs and Early Stopping**
-- **Evaluation Metrics**
+Our model's training and evaluation strategy aimed to find the right balance between accuracy and generalization after multiple tries.
 
-Our model's training and evaluation strategy aimed to find the right balance between accuracy and generalization.
+## Conclusion 🎯
 
-## Results and Conclusion 📊
+- Achieved an accuracy of 92.3% on the validation set.
+- Successful in classifying fashion items, showcasing the effectiveness of CNN models.
+- Some challenges observed with similar fashion categories like pullovers, shirts, and coats.
+- Valuable insights for improvement gained from the confusion matrix and misclassified images.
+<img src="https://github.com/AmirFARES/Fashion-MNIST-CNN/blob/main/imgs/confusionMatrix.png" alt="Line Chart" width="500" height="470">  
 
-Our image classification project yielded promising results:
+<img src="https://github.com/AmirFARES/Fashion-MNIST-CNN/blob/main/imgs/misclassified.png" alt="Line Chart" width="500" height="384">  
 
-- **Accuracy**: We achieved an accuracy of XXXX on the validation set (and update this value as needed).
+- Excited to share our findings with the community and continue improving our model.
 
-- **Visualization**: We created visualizations to understand the model's performance and identify areas of improvement. (You can include these visualizations if available.)
-
-In conclusion, our project demonstrates the effectiveness of CNN models in classifying fashion items. We've met our primary objectives and are excited to share our findings with the community.
